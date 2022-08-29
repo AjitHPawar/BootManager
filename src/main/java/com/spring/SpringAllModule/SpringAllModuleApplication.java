@@ -22,6 +22,4 @@ public class SpringAllModuleApplication implements WebMvcConfigurer {
 	public String welcome() {
 		return "Your Most Warm Welcome in Spring ";
 	}
-
-
 }
