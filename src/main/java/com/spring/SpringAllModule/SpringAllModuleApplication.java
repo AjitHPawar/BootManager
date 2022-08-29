@@ -7,10 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
 @SpringBootApplication
-@RestController
 @EnableSwagger2
 public class SpringAllModuleApplication implements WebMvcConfigurer {
 
@@ -18,8 +16,4 @@ public class SpringAllModuleApplication implements WebMvcConfigurer {
 		SpringApplication.run(SpringAllModuleApplication.class, args);
 	}
 
-	@RequestMapping("/")
-	public String welcome() {
-		return "Your Most Warm Welcome in Spring ";
-	}
 }
